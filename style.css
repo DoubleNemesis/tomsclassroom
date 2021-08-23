@@ -1,0 +1,107 @@
+body{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #141414;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+header{
+display: flex;
+align-items: center;
+width: 100%;
+padding: .5em 0;
+border-bottom: 2px solid #666;
+background-color: white;
+}
+
+.logo{
+    width: 80px;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 1025px){
+    .container{
+        margin-top: .7em;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        height: 85vh;
+    }
+}
+
+.homePageDivs{
+    background-color: transparent;
+    width: auto;
+    margin-top: 1em;
+    border-radius: 5px solid;
+    margin-bottom: 2em;
+}
+
+@media(min-width: 1025px){
+    .homePageDivs{
+        width: 30%;
+        padding: 1em;
+        border: 1px solid #333;
+    }
+}
+
+.projectImage{
+    max-width: 100%;
+}
+
+.projectText{
+    margin: 0 .5em;
+    color: white;
+}
+
+.projectText h2{
+    display: inline;
+    font-size: 1.1em;
+    margin-right: .3em;
+}
+
+.projectText p{
+    font-size: 1.1em;
+    margin: 0 0 .3em 1em;
+    padding: 0;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    color: white;
+    margin-bottom: 1.5em;
+    font-size: .9rem;
+}
+
+@media(min-width: 1025px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        color: white;
+        margin-bottom: 1.5em;
+        font-size: .9rem;
+    }
+}
+
+
+
+a{
+    color: whitesmoke;
+}
+
+a:hover{
+    color: limegreen;
+}
