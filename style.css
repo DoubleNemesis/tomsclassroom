@@ -1,7 +1,9 @@
 body{
     font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins';
     background-color: #141414;
+    margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -15,10 +17,11 @@ width: 100%;
 padding: .5em 0;
 border-bottom: 2px solid #666;
 background-color: white;
+height: 10vh;
 }
 
 .logo{
-    width: 80px;
+    width: 60px;
 }
 
 .container{
@@ -35,23 +38,24 @@ background-color: white;
     .container{
         margin-top: .7em;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items:center;
-        height: 85vh;
+        height: 90vh;
     }
 }
 
 .homePageDivs{
-    background-color: transparent;
+    background-color: #333;
     width: auto;
     margin-top: 1em;
-    border-radius: 5px solid;
+    border-radius: 5px;
     margin-bottom: 2em;
+    box-shadow: 2px 2px 2px #666;
 }
 
 @media(min-width: 1025px){
     .homePageDivs{
-        width: 30%;
+        width: 28%;
         padding: 1em;
         border: 1px solid #333;
     }
@@ -80,10 +84,13 @@ background-color: white;
 
 footer{
     position: relative;
+    display: grid;
     bottom: 0;
     color: white;
     margin-bottom: 1.5em;
     font-size: .9rem;
+    width: 100%;
+    place-items: center;
 }
 
 @media(min-width: 1025px){
@@ -95,8 +102,6 @@ footer{
         font-size: .9rem;
     }
 }
-
-
 
 a{
     color: whitesmoke;
